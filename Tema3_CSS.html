@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tema 3 - CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tema3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+    <header class="bg-primary text-white p-3 shadow-sm">
+        <div class="container">
+            <h1 class="h4 m-0"><img src="img/logo UNA.png" class="logo"> Temas a tratar en Programacion IV</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Temas</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Pagina_Principal.html"><i class="fa-solid fa-house me-1"></i>Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Tema1_Internet.html">Tema1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Tema2_HTML.html">Tema2</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#tema3">Tema3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Tema4_Backend.html">Tema4</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Tema5_JavaScript.html">Tema5</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-4 flex-grow-1">
+
+        <div class="hero-banner d-flex align-items-center gap-4" id="tema3">
+            <div class="hero-icon text-warning"><i class="fa-solid fa-palette"></i></div>
+            <div>
+                <h2>TEMA 3: CSS</h2>
+                <p>Estilos, selectores, Box Model, Flexbox y buenas prácticas</p>
+            </div>
+        </div>
+
+        <div class="buscador-card card">
+            <div class="card-body">
+                <div class="buscador-titulo"><i class="fa-solid fa-magnifying-glass me-2"></i>Búsqueda rápida</div>
+                <div class="d-flex flex-wrap gap-2">
+                    <a class="btn btn-sm btn-outline-primary" href="#P3_1">¿Qué es CSS?</a>
+                    <a class="btn btn-sm btn-outline-primary" href="#P3_2">Formas de aplicar CSS</a>
+                    <a class="btn btn-sm btn-outline-primary" href="#P3_3">Selectores principales</a>
+                    <a class="btn btn-sm btn-outline-primary" href="#P3_4">Propiedades principales</a>
+                    <a class="btn btn-sm btn-outline-primary" href="#P3_5">Box Model</a>
+                    <a class="btn btn-sm btn-outline-primary" href="#P3_6">Display</a>
+                    <a class="btn btn-sm btn-outline-primary" href="#P3_7">Position</a>
+                    <a class="btn btn-sm btn-outline-primary" href="#P3_8">Flexbox</a>
+                    <a class="btn btn-sm btn-outline-primary" href="#P3_9">Buenas prácticas</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P3_1"><i class="fa-solid fa-palette me-2 text-primary"></i>¿Qué es CSS?</h6>
+                        <p class="card-text">CSS (Cascading Style Sheets) es el lenguaje utilizado para dar estilo y diseño a las páginas web. Permite controlar colores, tamaños, posiciones y la apariencia visual de los elementos creados con HTML.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P3_2"><i class="fa-solid fa-layer-group me-2 text-primary"></i>Formas de aplicar CSS</h6>
+                        <ul class="list-group list-group-flush mt-2">
+                            <li class="list-group-item py-1"><span class="badge bg-primary me-2">1</span><strong>En línea</strong> — atributo style en la etiqueta</li>
+                            <li class="list-group-item py-1"><span class="badge bg-primary me-2">2</span><strong>Interno</strong> — etiqueta &lt;style&gt; en el head</li>
+                            <li class="list-group-item py-1"><span class="badge bg-primary me-2">3</span><strong>Externo</strong> — archivo .css separado (recomendado)</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P3_3"><i class="fa-solid fa-crosshairs me-2 text-primary"></i>Selectores principales</h6>
+                        <ul class="list-group list-group-flush mt-2">
+                            <li class="list-group-item py-1"><span class="badge bg-secondary me-2">etiqueta</span>Aplica a todas las etiquetas del mismo tipo</li>
+                            <li class="list-group-item py-1"><span class="badge bg-secondary me-2">.clase</span>Aplica a elementos con esa clase</li>
+                            <li class="list-group-item py-1"><span class="badge bg-secondary me-2">#id</span>Aplica a un elemento único</li>
+                            <li class="list-group-item py-1"><span class="badge bg-secondary me-2">descendente</span>Elementos dentro de otros</li>
+                            <li class="list-group-item py-1"><span class="badge bg-secondary me-2">:hover</span>Pseudo-clases para estados</li>
+                            <li class="list-group-item py-1"><span class="badge bg-secondary me-2">::before</span>Pseudo-elementos para partes</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P3_4"><i class="fa-solid fa-sliders me-2 text-primary"></i>Propiedades principales</h6>
+                        <ul class="list-group list-group-flush mt-2">
+                            <li class="list-group-item py-1"><code>color</code> — color del texto</li>
+                            <li class="list-group-item py-1"><code>background</code> — fondo del elemento</li>
+                            <li class="list-group-item py-1"><code>font-family</code> — tipo de letra</li>
+                            <li class="list-group-item py-1"><code>font-size</code> — tamaño del texto</li>
+                            <li class="list-group-item py-1"><code>width / height</code> — ancho y alto</li>
+                            <li class="list-group-item py-1"><code>margin / padding</code> — espaciado</li>
+                            <li class="list-group-item py-1"><code>border</code> — bordes</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P3_5"><i class="fa-solid fa-box me-2 text-primary"></i>Modelo de caja (Box Model)</h6>
+                        <p class="card-text">El modelo de caja describe cómo se estructura un elemento en CSS. Incluye el contenido, el padding, el borde y el margen, que juntos determinan el tamaño y el espacio que ocupa el elemento.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P3_6"><i class="fa-solid fa-display me-2 text-primary"></i>Display</h6>
+                        <p class="card-text">La propiedad display controla cómo se muestra un elemento en la página, por ejemplo como bloque, línea o contenedor flexible.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P3_7"><i class="fa-solid fa-up-down-left-right me-2 text-primary"></i>Position</h6>
+                        <p class="card-text">La propiedad position permite controlar la ubicación de un elemento dentro de la página, utilizando valores como static, relative, absolute o fixed.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P3_8"><i class="fa-solid fa-table-columns me-2 text-primary"></i>Flexbox</h6>
+                        <p class="card-text">Flexbox es un sistema de diseño que facilita la alineación y distribución de elementos dentro de un contenedor, permitiendo crear diseños flexibles y responsivos.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P3_9"><i class="fa-solid fa-check-double me-2 text-primary"></i>Buenas prácticas de estilos</h6>
+                        <p class="card-text">Las buenas prácticas en CSS incluyen mantener el código organizado, usar archivos externos, reutilizar clases y evitar estilos innecesarios para mejorar la claridad y mantenimiento del diseño.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3 mt-auto">
+        <div class="container">
+            Est: Josué Peñaranda Alvarado <br>
+            Prof: Steven Brenes Chavarria
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

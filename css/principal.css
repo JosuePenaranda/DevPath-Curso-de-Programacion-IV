@@ -1,0 +1,146 @@
+/* Estilos para Página Principal */
+
+body { background: #f0f2f5; }
+
+.hero {
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '</>';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20rem;
+    font-weight: 900;
+    color: rgba(255,255,255,0.03);
+    font-family: monospace;
+    pointer-events: none;
+}
+
+.hero img.logo-una {
+    height: 80px;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.4));
+    margin-bottom: 1.2rem;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 0.4rem;
+}
+
+.hero p {
+    color: rgba(255,255,255,0.7);
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+.tema-card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.tema-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.16);
+    color: inherit;
+}
+
+.tema-card .card-banner {
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.tema-card .card-banner i {
+    font-size: 3.5rem;
+}
+
+.tema-card .card-banner .num {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    opacity: 0.8;
+}
+
+.tema-card .card-banner h5 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+}
+
+.tema-card .card-body {
+    background: #fff;
+    padding: 1.2rem 1.4rem;
+}
+
+.tema-card .card-body p {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0 0 1rem;
+    line-height: 1.5;
+}
+
+.tema-card .card-body .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tema-card .card-body .tags span {
+    font-size: 0.72rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.tema-card .btn-ir {
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.55rem;
+    margin-top: 0.8rem;
+}
+
+/* Colores por tema */
+.banner-t1 { background: linear-gradient(135deg, #0f2027, #2c5364); color: white; }
+.banner-t2 { background: linear-gradient(135deg, #e44d26, #f16529); color: white; }
+.banner-t3 { background: linear-gradient(135deg, #1a1a2e, #264de4); color: white; }
+.banner-t4 { background: linear-gradient(135deg, #134e5e, #71b280); color: white; }
+.banner-t5 { background: linear-gradient(135deg, #1a1a2e, #f0db4f); color: white; }
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeInUp 0.5s ease both;
+}
+
+.fade-in:nth-child(1) { animation-delay: 0.1s; }
+.fade-in:nth-child(2) { animation-delay: 0.2s; }
+.fade-in:nth-child(3) { animation-delay: 0.3s; }
+.fade-in:nth-child(4) { animation-delay: 0.4s; }
+.fade-in:nth-child(5) { animation-delay: 0.5s; }
+

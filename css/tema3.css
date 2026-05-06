@@ -1,0 +1,106 @@
+/* Estilos para Tema 3 - CSS */
+
+.hero-banner {
+    background: linear-gradient(135deg, #1a1a2e 0%, #264de4 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-banner::before {
+    content: '{ }';
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(255,255,255,0.06);
+    font-family: monospace;
+}
+
+.hero-banner h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hero-banner p {
+    color: rgba(255,255,255,0.8);
+    margin: 0.3rem 0 0;
+    font-size: 0.95rem;
+}
+
+.hero-icon {
+    font-size: 5rem;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+}
+
+.buscador-card {
+    border: none;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+.buscador-titulo {
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+
+.evento-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+}
+
+.evento-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}
+
+.evento-card .card-body {
+    padding: 1.1rem 1.3rem;
+}
+
+.evento-card .card-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.evento-card .card-text {
+    font-size: 0.875rem;
+    color: #555;
+    margin: 0;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeInUp 0.4s ease both;
+}
+
+.fade-in:nth-child(1) { animation-delay: 0.05s; }
+.fade-in:nth-child(2) { animation-delay: 0.08s; }
+.fade-in:nth-child(3) { animation-delay: 0.11s; }
+.fade-in:nth-child(4) { animation-delay: 0.14s; }
+.fade-in:nth-child(5) { animation-delay: 0.17s; }
+.fade-in:nth-child(6) { animation-delay: 0.20s; }
+.fade-in:nth-child(7) { animation-delay: 0.23s; }
+.fade-in:nth-child(8) { animation-delay: 0.26s; }
+.fade-in:nth-child(9) { animation-delay: 0.29s; }
+

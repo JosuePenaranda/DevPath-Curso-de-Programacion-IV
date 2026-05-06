@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tema 4 - Elementos del Back-end</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tema4.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+    <header class="bg-primary text-white p-3 shadow-sm">
+        <div class="container">
+            <h1 class="h4 m-0"><img src="img/logo UNA.png" class="logo"> Temas a tratar en Programacion IV</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Temas</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Pagina_Principal.html"><i class="fa-solid fa-house me-1"></i>Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Tema1_Internet.html">Tema1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Tema2_HTML.html">Tema2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Tema3_CSS.html">Tema3</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#tema4">Tema4</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Tema5_JavaScript.html">Tema5</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-4 flex-grow-1">
+
+        <div class="hero-banner d-flex align-items-center gap-4" id="tema4">
+            <div class="hero-icon text-success"><i class="fa-solid fa-database"></i></div>
+            <div>
+                <h2>TEMA 4: Elementos del Back-end</h2>
+                <p>Spring Boot, Thymeleaf, HTTP, Cookies, Sesiones y más</p>
+            </div>
+        </div>
+
+        <div class="buscador-card card">
+            <div class="card-body">
+                <div class="buscador-titulo"><i class="fa-solid fa-magnifying-glass me-2"></i>Búsqueda rápida</div>
+                <div class="d-flex flex-wrap gap-2">
+                    <a class="btn btn-sm btn-outline-success" href="#P4_1">Cliente vs Servidor</a>
+                    <a class="btn btn-sm btn-outline-success" href="#P4_2">GET / POST</a>
+                    <a class="btn btn-sm btn-outline-success" href="#P4_3">HTTP Response</a>
+                    <a class="btn btn-sm btn-outline-success" href="#P4_4">HTTP Request</a>
+                    <a class="btn btn-sm btn-outline-success" href="#P4_5">Spring Boot</a>
+                    <a class="btn btn-sm btn-outline-success" href="#P4_6">@Autowired</a>
+                    <a class="btn btn-sm btn-outline-success" href="#P4_7">@Controller</a>
+                    <a class="btn btn-sm btn-outline-success" href="#P4_8">Thymeleaf</a>
+                    <a class="btn btn-sm btn-outline-success" href="#P4_9">Cookies</a>
+                    <a class="btn btn-sm btn-outline-success" href="#P4_10">Sesiones</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P4_1"><i class="fa-solid fa-arrow-right-arrow-left me-2 text-success"></i>Cliente vs Servidor</h6>
+                        <p class="card-text">El cliente es quien inicia la comunicación (navegador, app móvil), enviando solicitudes. El servidor las recibe, las procesa y devuelve una respuesta. Es una arquitectura de solicitud-respuesta donde cada uno tiene un rol definido.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P4_2"><i class="fa-solid fa-paper-plane me-2 text-success"></i>Método GET / POST</h6>
+                        <ul class="list-group list-group-flush mt-2">
+                            <li class="list-group-item py-1"><span class="badge bg-info text-dark me-2">GET</span>Solicita datos; parámetros en la URL, no modifica nada.</li>
+                            <li class="list-group-item py-1"><span class="badge bg-success me-2">POST</span>Envía datos al servidor; parámetros en el cuerpo, más seguro.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P4_3"><i class="fa-solid fa-reply me-2 text-success"></i>HTTP Response</h6>
+                        <p class="card-text">Es la respuesta que el servidor envía al cliente. Contiene: un status code (200 OK, 404 Not Found, 500 Error), headers (tipo de contenido, cookies, etc.) y el body (HTML, JSON, etc.).</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P4_4"><i class="fa-solid fa-share me-2 text-success"></i>HTTP Request</h6>
+                        <p class="card-text">Es la solicitud que el cliente envía al servidor. Contiene: el método (GET, POST…), la URL, los headers (idioma, tipo de contenido) y opcionalmente un body (en POST).</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P4_5"><i class="fa-brands fa-java me-2 text-success"></i>Spring Boot</h6>
+                        <p class="card-text">Framework de Java que simplifica la creación de aplicaciones web. Elimina configuración manual gracias al autoconfigurado, incluye un servidor embebido (Tomcat) y permite levantar una app con muy poco código usando anotaciones.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P4_6"><i class="fa-solid fa-syringe me-2 text-success"></i>Inyección de dependencias (@Autowired)</h6>
+                        <p class="card-text">Permite que Spring cree y gestione objetos automáticamente. En lugar de hacer new MiServicio(), se declara con @Autowired y Spring inyecta la instancia. Reduce el acoplamiento y facilita el testing.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P4_7"><i class="fa-solid fa-sitemap me-2 text-success"></i>Controladores (@Controller / @RestController)</h6>
+                        <p class="card-text">@Controller maneja peticiones y retorna vistas (HTML con Thymeleaf). @RestController retorna datos directamente (JSON/XML), ideal para APIs. La diferencia clave es que @RestController incluye @ResponseBody automáticamente.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P4_9"><i class="fa-solid fa-cookie-bite me-2 text-success"></i>Cookies</h6>
+                        <p class="card-text">Pequeños archivos de texto que el servidor guarda en el navegador del cliente. Se usan para recordar información entre sesiones (preferencias, login). Se envían automáticamente en cada request.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-6 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P4_10"><i class="fa-solid fa-user-clock me-2 text-success"></i>Sesiones</h6>
+                        <p class="card-text">Mecanismo del servidor para guardar información del usuario durante su visita. A diferencia de las cookies (cliente), los datos se guardan en el servidor. Spring usa HttpSession y cada usuario tiene un ID de sesión único guardado en una cookie.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Thymeleaf tabla completa -->
+            <article class="col-md-12 fade-in">
+                <div class="evento-card card">
+                    <div class="card-body">
+                        <h6 class="card-title" id="P4_8"><i class="fa-solid fa-leaf me-2 text-success"></i>Thymeleaf</h6>
+                        <div class="table-responsive mt-2">
+                            <table class="table tabla-thymeleaf">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Etiqueta</th>
+                                        <th>Descripción</th>
+                                        <th>Ejemplo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><th>1</th><td><span class="badge-tag">th:text</span></td><td>Reemplaza el contenido con texto evaluado.</td><td><span class="code-example">&lt;span th:text="${usuario.nombre}"&gt;</span></td></tr>
+                                    <tr><th>2</th><td><span class="badge-tag">th:utext</span></td><td>Inserta texto sin escapar HTML.</td><td><span class="code-example">&lt;div th:utext="${contenidoHtml}"&gt;</span></td></tr>
+                                    <tr><th>3</th><td><span class="badge-tag">th:if</span></td><td>Renderiza si la condición es verdadera.</td><td><span class="code-example">&lt;div th:if="${activo}"&gt;</span></td></tr>
+                                    <tr><th>4</th><td><span class="badge-tag">th:unless</span></td><td>Renderiza si la condición es falsa.</td><td><span class="code-example">&lt;div th:unless="${activo}"&gt;</span></td></tr>
+                                    <tr><th>5</th><td><span class="badge-tag">th:each</span></td><td>Itera sobre una colección.</td><td><span class="code-example">&lt;tr th:each="p : ${productos}"&gt;</span></td></tr>
+                                    <tr><th>6</th><td><span class="badge-tag">th:href</span></td><td>Define dinámicamente el href.</td><td><span class="code-example">&lt;a th:href="@{/usuarios}"&gt;</span></td></tr>
+                                    <tr><th>7</th><td><span class="badge-tag">th:src</span></td><td>Define dinámicamente el src.</td><td><span class="code-example">&lt;img th:src="@{/img/logo.png}"&gt;</span></td></tr>
+                                    <tr><th>8</th><td><span class="badge-tag">th:value</span></td><td>Asigna dinámicamente el value.</td><td><span class="code-example">&lt;input th:value="${usuario.nombre}"&gt;</span></td></tr>
+                                    <tr><th>9</th><td><span class="badge-tag">th:object</span></td><td>Define el objeto del formulario.</td><td><span class="code-example">&lt;form th:object="${usuario}"&gt;</span></td></tr>
+                                    <tr><th>10</th><td><span class="badge-tag">th:field</span></td><td>Vincula un campo con una propiedad.</td><td><span class="code-example">&lt;input th:field="*{nombre}"&gt;</span></td></tr>
+                                    <tr><th>11</th><td><span class="badge-tag">th:action</span></td><td>Define la acción del formulario.</td><td><span class="code-example">&lt;form th:action="@{/guardar}"&gt;</span></td></tr>
+                                    <tr><th>12</th><td><span class="badge-tag">th:fragment</span></td><td>Define un fragmento reutilizable.</td><td><span class="code-example">&lt;div th:fragment="header"&gt;</span></td></tr>
+                                    <tr><th>13</th><td><span class="badge-tag">th:replace</span></td><td>Reemplaza con un fragmento.</td><td><span class="code-example">&lt;div th:replace="layout :: header"&gt;</span></td></tr>
+                                    <tr><th>14</th><td><span class="badge-tag">th:include</span></td><td>Incluye contenido de otro fragmento.</td><td><span class="code-example">&lt;div th:include="layout :: menu"&gt;</span></td></tr>
+                                    <tr><th>15</th><td><span class="badge-tag">th:with</span></td><td>Define variables locales.</td><td><span class="code-example">&lt;div th:with="total=${precio*cantidad}"&gt;</span></td></tr>
+                                    <tr><th>16</th><td><span class="badge-tag">th:classappend</span></td><td>Agrega clases CSS dinámicamente.</td><td><span class="code-example">&lt;div th:classappend="${activo}? 'activo'"&gt;</span></td></tr>
+                                    <tr><th>17</th><td><span class="badge-tag">th:id</span></td><td>Define dinámicamente el id.</td><td><span class="code-example">&lt;div th:id="${identificador}"&gt;</span></td></tr>
+                                    <tr><th>18</th><td><span class="badge-tag">th:style</span></td><td>Define estilos CSS dinámicamente.</td><td><span class="code-example">&lt;div th:style="${color}"&gt;</span></td></tr>
+                                    <tr><th>19</th><td><span class="badge-tag">th:switch</span></td><td>Evalúa una expresión para múltiples casos.</td><td><span class="code-example">&lt;div th:switch="${estado}"&gt;</span></td></tr>
+                                    <tr><th>20</th><td><span class="badge-tag">th:case</span></td><td>Define un caso dentro de th:switch.</td><td><span class="code-example">&lt;span th:case="'A'"&gt;Activo</span></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3 mt-auto">
+        <div class="container">
+            Est: Josué Peñaranda Alvarado <br>
+            Prof: Steven Brenes Chavarria
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

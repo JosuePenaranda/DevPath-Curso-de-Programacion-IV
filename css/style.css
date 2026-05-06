@@ -1,0 +1,98 @@
+.accordion-item{
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #dee2e6;
+    overflow: hidden;
+}
+
+.accordion-button{
+    border-radius: 12px;
+}
+
+.accordion-button:not(.collapsed){
+    border-radius: 12px 12px 0 0;
+}
+
+.logo{
+    width: 30px;
+}
+
+.accordion-body{
+    background-color:lightcyan;
+}
+
+.col-md-12{
+    margin-bottom: 10px;
+}
+
+.etiqueta-nombre{
+    width: 120px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.fila-etiqueta{
+    margin-bottom: 6px;
+}
+
+.tabla-thymeleaf thead tr {
+    background-color: #1a1a2e;
+    color: #ffffff;
+}
+
+.tabla-thymeleaf thead th {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    padding: 0.85rem 1.1rem;
+    border: none;
+}
+
+.tabla-thymeleaf tbody tr {
+    border-bottom: 1px solid #eef0f4;
+    transition: background 0.15s ease;
+}
+
+.tabla-thymeleaf tbody tr:hover {
+    background-color: #f0f4ff;
+}
+
+.tabla-thymeleaf tbody td,
+.tabla-thymeleaf tbody th {
+    padding: 0.7rem 1.1rem;
+    vertical-align: middle;
+    border: none;
+    font-size: 0.875rem;
+}
+
+.badge-tag {
+    display: inline-block;
+    background: #e8f0fe;
+    color: #1a56db;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.25em 0.65em;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.code-example {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: #c0392b;
+    background: #fdf3f2;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.row-num {
+    color: #aab0c0;
+    font-weight: 600;
+    font-size: 0.78rem;
+    font-family: 'JetBrains Mono', monospace;
+}
